@@ -1,7 +1,7 @@
 const multer = require("multer");
 
 const fileFiter = (req,file,cb)=>{
-    console.log("iinnn");
+    // console.log("iinnn");
     if(file.mimetype=="image/jpg"||file.mimetype=="image/png"||file.mimetype=="image/jpeg"){
         cb(null,true);
     }
